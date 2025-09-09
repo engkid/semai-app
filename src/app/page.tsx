@@ -7,9 +7,9 @@ import MyLayout from "./layouts/mylayout";
 export default function HomePage() { 
   return (
     <>
-      {/* <Navbar />
+      <Navbar />
       <Hero />
-      <Carousel /> */}
+      <Carousel />
       <MyLayout />
     </>
   );
