@@ -3,41 +3,43 @@
 import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const services = [
 	{
 		title: "Branding",
 		description: "Crafting unique brand identities.",
-		image: "/images/branding.png",
+		image: `${prefix}/images/branding.png`,
 		detail: "We help you build a memorable brand with strategy, design, and storytelling that sets you apart.",
 	},
 	{
 		title: "Web Design",
 		description: "Modern, responsive websites.",
-		image: "/images/web-design.png",
+		image: `${prefix}/images/web-design.png`,
 		detail: "Our web design team creates beautiful, fast, and accessible sites tailored to your business goals.",
 	},
 	{
 		title: "Content Creation",
 		description: "Engaging digital content.",
-		image: "/images/content-creation.png",
+		image: `${prefix}/images/content-creation.png`,
 		detail: "From copywriting to video, we produce content that connects and converts your audience.",
 	},
 	{
 		title: "Social Media",
 		description: "Strategic social campaigns.",
-		image: "/images/social-media.png",
+		image: `${prefix}/images/social-media.png`,
 		detail: "Grow your brand with creative campaigns and data-driven social media management.",
 	},
 	{
 		title: "UI/UX",
 		description: "User-focused design solutions.",
-		image: "/images/ui-ux.png",
+		image: `${prefix}/images/ui-ux.png`,
 		detail: "We design intuitive interfaces and experiences that delight users and drive engagement.",
 	},
 	{
 		title: "Motion Graphics",
 		description: "Dynamic visual storytelling.",
-		image: "/images/motion-graphics.png",
+		image: `${prefix}/images/motion-graphics.png`,
 		detail: "Bring your story to life with animated graphics and video for web, social, and ads.",
 	},
 ];
